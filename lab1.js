@@ -81,7 +81,7 @@ const questionFour = function questionFour(num) {
 module.exports = {
     firstName: "Eric", 
     lastName: "Knapp", 
-    studentId: "10473686",
+    studentId: "",
     questionOne,
     questionTwo,
     questionThree,
