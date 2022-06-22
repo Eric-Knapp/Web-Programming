@@ -1,0 +1,15 @@
+{
+  "name": "lab4",
+  "version": "1.0.0",
+  "description": "cs 546 lab 4 - MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Eric Knapp",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^4.7.0"
+  }
+}
