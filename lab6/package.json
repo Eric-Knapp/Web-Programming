@@ -1,0 +1,16 @@
+{
+  "name": "lab6",
+  "version": "1.0.0",
+  "description": "cs546 lab6 - A recipe API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Eric Knapp",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongodb": "^4.7.0"
+  }
+}
