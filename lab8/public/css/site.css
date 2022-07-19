@@ -1,131 +1,104 @@
-body {
-    background: gray;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18pt;
-  }
-  
-main {
-    max-width: 70%;
-    margin: auto;
-  }
+* {
+	box-sizing: border-box;
+}
 
-img {
-  width: 30%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+html,
+body {
+	font-size: 15pt;
+}
+
+body {
+	background: #dedede;
+	font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+main {
+	max-width: 75%;
+	margin: auto;
 }
 
 header {
-    font-weight: bold;
-    border-bottom: 2px solid gray;
-  }
+	border-bottom: 1px solid #afafaf;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #222;
+	margin-bottom: 5px;
+}
 
 h1 {
-    font-weight: bold; /*font-weight: bold;*/
-    font-size: 3rem;
-    color: darkblue;
-    text-align: center;
+	font-size: 2rem;
 }
+
 h2 {
-    font-weight: bold;
-    font-size: 2rem;
-    color: darkmagenta;
-    text-align: center;
-    font-style: italic;
+	font-size: 1.5rem;
 }
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1.25rem;
+}
+
+h5 {
+	font-size: 1.15rem;
+}
+
+h6 {
+	font-size: 1.05rem;
+}
+
 p {
-    font-size: 1rem;
-    line-height: 2;
-    color: darkcyan;
-    
-  }
-
-  ul {
-    font-weight: bold;
-    list-style: none; 
-    text-align: center;
-  }
-  
-  ul li::before {
-    font-weight: bold;
-    content: "\2022";
-    color:pink;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-  }
-
-.content{
-    font: size 30pt;
-  }
-
-.title{
-    font-weight: bold;
-    font-size:30pt;
-    text-decoration: underline;
+	font-size: 1rem;
+	line-height: 2;
 }
 
-/* .error{
-    font: size 40pt;
-    color: red;
-} */
-
-.form{
-  font-weight: bold;
-  font: size 40pt;
-  text-align: center;
-  color: palevioletred;
+.post {
+	width: 75%;
+	border-bottom: 1px dashed #333;
 }
 
-.lang{
-  font-style: italic;
+.new-post-form {
+	max-width: 300px;
 }
 
-button{
-    border:1px solid mediumslateblue;
-    border-radius: 6px;
-    background-color: pink;
-    height:1.30rem;
-}
-#formInput{
-    border:5 px solid peachpuff;
-    border-radius: 11px;
-    background-color:whitesmoke;
-    height:1.30rem;
+.new-post-form .full-width-input {
+	display: block;
+	min-height: 3em;
+	margin: 10px 0;
+	width: 100%;
 }
 
-.show-details dt{
-  font-style: italic;
-  font-weight: bold;
+label {
+	font-weight: bold;
 }
 
-.show-details li{
-  font: size 10pt;
+.error-list li {
+	color: #ff0000;
 }
 
-.genres{
-  background-color: blue;
-  font-weight: bold;
-  text-align: left;
+.author-link,
+.author-link:link {
+	color: #228b22;
 }
 
-.name{
-  font-weight: bold;
-  font: size 50pt;
+.author-link:visited {
+	font-style: italic;
+	color: saddlebrown;
 }
 
-.searchTerm{
-  background-color: lightblue;
-  font-weight: bold;
+.author-link:hover {
+	font-style: normal;
+	font-weight: 700;
 }
 
-.not-found{
-  font: size 45pt;
-  color: purple;
-}
-
-.form label {
-  background-color: greenyellow;
-  padding: 9px;
+.author-link:active {
+	color: #ff0000;
 }
