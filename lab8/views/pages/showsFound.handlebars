@@ -1,4 +1,4 @@
-<div class="content">
+<div>
 {{#if showAmount}}
 <h1 class="title"> Shows Found </h1>
 <h2 class="searchTerm"> Search: {{searchTerm}} </h2>
@@ -10,7 +10,7 @@
         </ul>
     </div>
 {{else}}
-<p class="not-found">Sorry, we're not finding this show, no results were found for {{searchTerm}}.</p>
+<p>Apologies, We are not finding this show, no results found for {{searchTerm}}.</p>
 {{/if}}
-<a href="/">Try a different search</a>
+<a class="diffSearch" href="/">Try a different search</a>
 </div>
