@@ -1,0 +1,16 @@
+<div class="content">
+{{#if showAmount}}
+<h1 class="title"> Shows Found </h1>
+<h2 class="searchTerm"> Search Term: {{searchTerm}} </h2>
+    <div>
+        <ul> 
+            {{#each shows}}
+                <li> <a href = "/shows/{{show.id}}" class="name"> {{show.name}} </a> </li>
+            {{/each}}
+        </ul>
+    </div>
+{{else}}
+<p class="not-found">We're sorry, but no results were found for {{searchTerm}}.</p>
+{{/if}}
+<a href="/">Make another search</a>
+</div>

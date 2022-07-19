@@ -1,0 +1,30 @@
+
+<div class="content">
+<div>
+<h1 class="name">{{show.name}}</h1>
+<div class = "img">
+{{#if show.image.medium}}
+<img src="{{show.image.medium}}" alt="{{show.name}}"/>
+{{/if}}
+</div>
+<dl class="show-details">
+  <dt>Language:</dt>
+  <dd>{{show.language}}</dd>
+  <dt>Genres:</dt>
+  <dd>
+  <ul class="genres">
+    {{#each show.genres}}
+    <li>{{ this }}</li>
+    {{/each}}
+  </ul>
+  </dd>
+  <dt>Average Rating:</dt>
+  <dd>{{show.rating.average}}</dd>
+  <dt>Network Name:</dt>
+  <dd>{{show.network.name}}</dd>
+  <dt>Summary:</dt>
+  <dd>{{show.summary}}</dd>
+</dl> 
+</div>
+
+</div>
