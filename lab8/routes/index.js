@@ -1,17 +1,16 @@
-const postRoutes = require("./posts");
-const userRoutes = require("./users");
+const showRoutes = require("./shows");
+const searchRoutes = require("./search");
 const path = require("path");
 
-// edit all of these in this file
 const constructorMethod = (app) => {
-  app.use("/posts", postRoutes);
-  app.use("/users", userRoutes);
-  app.get("/about", (req, res) => {
-    res.sendFile(path.resolve("static/about.html"));
+  app.use("/show", showRoutes);
+  app.use("/search", searchRoutes);
+  app.get("/", (req, res) => {
+    res.sendFile(path.resolve("views/layouts/main.handlebars"));
   });
 
   app.use("*", (req, res) => {
-    res.redirect("/posts");
+    res.redirect("/");
   });
 };
 
