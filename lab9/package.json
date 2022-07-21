@@ -4,7 +4,8 @@
   "description": "cs546 - lab 9 Fibonacci & Prime Number Checker",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "Eric Knapp",
   "license": "ISC",
