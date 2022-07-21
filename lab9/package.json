@@ -1,0 +1,14 @@
+{
+  "name": "cs546",
+  "version": "1.0.0",
+  "description": "cs546 - lab 9 Fibonacci & Prime Number Checker",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric Knapp",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
