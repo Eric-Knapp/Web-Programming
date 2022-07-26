@@ -7,6 +7,12 @@
 	color: #FF3D00;
 }
 
+.fibSum{
+  text-align: auto;
+  padding-left: 2.5in;
+  color: wheat;
+}
+
 html{
     background-color: rgb(53, 50, 50); 
 }
@@ -25,7 +31,7 @@ header{
 
 footer{
     text-align: center;
-    color: whitesmoke;
+    color: greenyellow;
     vertical-align: bottom;
 }
 
@@ -47,6 +53,10 @@ form{
     text-align: center;
     color: wheat;
   }
+
+/* .ul1{
+  text-align: center;
+} */
   
 button{
     background-color: wheat;

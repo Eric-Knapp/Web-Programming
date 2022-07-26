@@ -5,7 +5,7 @@ const uList = document.getElementById("list");
 
 //prime #s  return modulus: num modulus i equals 0
 function primes(num) {
-  for (var i = 2; i < num; i++) {
+  for (let i = 2; i < num; i++) {
     if (num % i === 0) {
       return false;
     }
@@ -52,12 +52,10 @@ if (form1) {
       //appending to list each entered value and fibonacci calculation
       uList.appendChild(lis);
       form1.reset(); //reset form
-      number.focus();
     } else {
       number.value = "";
       error.hidden = false; //else turn on error
       error.innerHTML = "Error! Cannot leave blank, must enter a valid number!";
-      number.focus();
       number.className = "inputClass";
     }
   });
