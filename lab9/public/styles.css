@@ -1,0 +1,61 @@
+/* Mandatory- in homework spec */
+.is-prime {
+	color: #00E676;
+}
+/* Mandatory- in homework spec */
+.not-prime {
+	color: #FF3D00;
+}
+
+html{
+    background-color: rgb(53, 50, 50); 
+}
+
+body{
+  color: whitesmoke;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+}
+
+header{
+    font-size: 20pt;
+    text-align: center;
+    text-decoration: underline;
+    color: wheat;
+}
+
+footer{
+    text-align: center;
+    color: whitesmoke;
+    vertical-align: bottom;
+}
+
+.foot{
+  vertical-align: bottom;
+}
+
+.error {
+	color: red;
+  font-size: 15pt;
+}
+
+.inputNum{
+  font-size: 15pt;
+}
+
+form{
+    font: size 60pt;
+    text-align: center;
+    color: wheat;
+  }
+  
+button{
+    background-color: wheat;
+    height: 20pt;
+    width: 60pt;
+}
+
+p {
+    font-size: 13pt;
+    text-align: center;
+    color: wheat;
+  }
