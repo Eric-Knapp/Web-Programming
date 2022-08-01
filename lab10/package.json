@@ -1,0 +1,18 @@
+{
+  "name": "lab10",
+  "version": "1.0.0",
+  "description": "cs546 - lab10",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "app.js"
+  },
+  "author": "Eric Knapp 104736864",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3"
+  }
+}
