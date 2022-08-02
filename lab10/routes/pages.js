@@ -3,9 +3,9 @@ const router = express.Router();
 const bcrypt = require("bcrypt");
 const users = require("../data/users");
 
-function isAuthenticated(req, res, next) {
+function Authenticate(req, res, next) {
   if (req.session.user) return next();
-  else res.status(403).render("invalid", { title: "Invalid Entry" });
+  else res.status(403).render("error", { title: "Invalid Entry" }); //changed invalid to error
 }
 
 router.get("/", function (req, res) {
@@ -16,8 +16,8 @@ router.get("/", function (req, res) {
   }
 });
 
-router.get("/private", isAuthenticated, (req, res) => {
-  res.render("details", req.session.user);
+router.get("/private", Authenticate, (req, res) => {
+  res.render("description", req.session.user);
 });
 
 router.get("/logout", async (req, res) => {
