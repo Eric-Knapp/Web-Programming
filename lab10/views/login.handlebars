@@ -1,13 +1,20 @@
-<body><link rel="stylesheet" href="/public/design.css"></body>
+<body>
+    <link rel="stylesheet" href="/public/design.css">
+</body>
 {{#if error}}
     <p>{{error}}</p>
 {{/if}}
 
 <form id="login-form" method="POST" action="/login">
-<label class="enterUser" for="username">Enter username:</label>
+<label 
+class="enterUser" for="username">Enter username:
+</label>
 <input type="text" id="username" name="username"/>
-
-<label class="enterPassword" for="password">Enter password:</label>
+<label 
+class="enterPassword" for="password">Enter password:
+</label>
 <input type="password" id="password" name="password"/>
-<button type="submit">Login</button>
+<button 
+type="submit">Login
+</button>
 </form>
