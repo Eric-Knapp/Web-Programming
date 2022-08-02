@@ -22,6 +22,22 @@ body{
     color:whitesmoke;
   }
 
+.enterUser{
+  /* padding-left: .5in; */
+  /* padding-top: 1in; */
+  /* padding-right: 1in; */
+  font-weight: bold;
+  size: 12px;
+}
+
+.enterPassword{
+  /* align-self: left;
+  padding-left: .5in;
+  padding-top: 1in; */
+  font-weight: bold;
+  size: 12px;
+ 
+}
 
 /* .white{
   color:whitesmoke
