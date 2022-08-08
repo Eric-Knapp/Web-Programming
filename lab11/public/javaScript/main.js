@@ -4,7 +4,7 @@ $(function () {
   var $search_item = $("#search_item");
 
   // checking img
-  function isValid(val, type) {
+  function check_Valid(val, type) {
     if (type == "img") {
       if (val == null) {
         return "/public/no_image_available.jpeg";
@@ -25,42 +25,42 @@ $(function () {
     }
 
     if (type == "reg") return val;
-    else if (type == "average") return isValid(val.average, "reg");
-    else if (type == "name") return isValid(val.name, "reg");
+    else if (type == "average") return check_Valid(val.average, "reg");
+    else if (type == "name") return check_Valid(val.name, "reg");
   }
 
-  function ClickLink(url) {
+  function link(url) {
     $.ajax({
       type: "GET",
       url: url,
       success: function (shows) {
         $show.html(
           `<h1>` +
-            isValid(shows.name, "reg") +
+            check_Valid(shows.name, "reg") +
             `</h1>` +
             `<img src="` +
-            isValid(shows.image, "img") +
+            check_Valid(shows.image, "img") +
             `"/>` +
             `<dl>
                     <dt>Language:</dt>` +
             `<dd>` +
-            isValid(shows.language, "reg") +
+            check_Valid(shows.language, "reg") +
             `</dd>
                     <dt>Genres:</dt>` +
             `<ul>` +
-            isValid(shows.genres, "reg") +
+            check_Valid(shows.genres, "reg") +
             `</ul>
                     <dt>Average Rating:</dt>` +
             `<dd>` +
-            isValid(shows.rating, "average") +
+            check_Valid(shows.rating, "average") +
             `</dd>
                     <dt>Network:</dt>` +
             `<dd>` +
-            isValid(shows.network, "name") +
+            check_Valid(shows.network, "name") +
             `</dd>
                     <dt>Summary:</dt>` +
             `<dd>` +
-            isValid(shows.summary, "reg") +
+            check_Valid(shows.summary, "reg") +
             `</dd>
                   </dl>`
         );
@@ -74,7 +74,7 @@ $(function () {
     success: function (shows) {
       $showList.hide();
       $show.hide();
-      $("#homeLink").hide();
+      $("#mainPageLink").hide();
       $.each(shows, function (i, show) {
         $showList.append(
           `<li>
@@ -87,9 +87,9 @@ $(function () {
       $("a.link").on("click", function (event) {
         event.preventDefault();
         $showList.hide();
-        ClickLink(event.target.href);
+        link(event.target.href);
         $show.show();
-        $("#homeLink").show();
+        $("#mainPageLink").show();
       });
     },
   });
@@ -107,7 +107,7 @@ $(function () {
       $.ajax(requestConfig).then((responseMessage) => {
         $showList.hide();
         $showList.empty();
-        $("#homeLink").hide();
+        $("#mainPageLink").hide();
         $show.hide();
         $.each(responseMessage, function (i, show) {
           $showList.append(
@@ -117,15 +117,15 @@ $(function () {
           );
         });
         $showList.show();
-        $("#homeLink").show();
+        $("#mainPageLink").show();
 
         $("a.link").on("click", function (event) {
           event.preventDefault();
           $showList.hide();
-          $("#homeLink").hide();
-          ClickLink(event.target.href);
+          $("#mainPageLink").hide();
+          link(event.target.href);
           $show.show();
-          $("#homeLink").show();
+          $("#mainPageLink").show();
         });
       });
     }
