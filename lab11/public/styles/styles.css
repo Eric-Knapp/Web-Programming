@@ -1,0 +1,16 @@
+html{
+    background-color: wheat; 
+}
+
+body{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+  }
+
+  footer{
+    font-weight: bold;
+    margin-top: 10pt;
+    text-align: right;
+    font-size: 13pt;
+}
+
