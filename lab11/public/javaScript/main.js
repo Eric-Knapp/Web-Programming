@@ -1,7 +1,7 @@
 $(function () {
   var $show = $("#show");
   var $showList = $("#showList");
-  var $search_item = $("#search_item");
+  var $search_term = $("#search_term");
 
   // checking img
   function check_Valid(val, type) {
@@ -96,12 +96,12 @@ $(function () {
 
   $("#searchForm").submit((event) => {
     event.preventDefault();
-    if ($search_item.val().trim() === "") {
+    if ($search_term.val().trim() === "") {
       alert("input invalid");
     } else {
       var requestConfig = {
         type: "GET",
-        url: "http://api.tvmaze.com/search/shows?q=" + $search_item.val(),
+        url: "http://api.tvmaze.com/search/shows?q=" + $search_term.val(),
       };
 
       $.ajax(requestConfig).then((responseMessage) => {
